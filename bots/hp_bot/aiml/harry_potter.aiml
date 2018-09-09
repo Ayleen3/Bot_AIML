@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- Bonjour -->
+	<category>
+		<pattern>GREETINGS</pattern>
+			<template> Bonjour et bienvenue à Poudlard! Comment est ce que tu t appelles </template>
+	</category>
+
+	<category>
+		<pattern><SET>GREETINGS_SET</SET></pattern>
+		<template><srai>GREETINGS</srai></template>
+	</category>
+
+	<category>
+		<pattern>^</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="1"/>  </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+	<category>
+		<pattern>^ et toi</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="1"/>  </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+	<category>
+		<pattern>Moi c est ^ et toi</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="1"/>  </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+ 	<category>
+		<pattern>Je m appelle ^</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="1"/>  </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+ 	<category>
+		<pattern>Je m appelle ^ et toi</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="1"/>  </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+ 	<category>
+		<pattern>^ suis ^</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="2"/> </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+ 	<category>
+		<pattern>^ suis ^ et toi</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="2"/> </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+ 	<category>
+		<pattern>^ nom ^</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="2"/>  </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+ 	<category>
+		<pattern>^ nom ^ et toi</pattern>
+			<that> Comment est ce que tu t appelles </that>
+			<template> 
+				Salut <set name = "username"> <star index="2"/>  </set> ! Enchanté de faire ta connaissance. Aimerais tu en apprendre plus sur la magie
+			</template>
+	</category>
+
+<!-- Présentation -->
+
+ 	<category>
+		<pattern>MASTER</pattern>
+			<template> Ma maîtresse est le plus puissante de toutes les sorcières ayant vu le jour, Molly! </template>
+	</category>
+
+	<category>
+		<pattern><SET>MASTER_SET</SET></pattern>
+		<template><srai>MASTER</srai></template>
+	</category>
+
+ 	<category>
+		<pattern>WHO_ALBUS</pattern>
+			<template> Albus Perceval Wulfric Brian Dumbledore (1881 - 30 juin 1997), je suis l'un des plus puissants sorciers de tous les temps, le directeur de l'école de sorcellerie Poudlard depuis 1956. J'étais avant ça, professeur de métamorphose. Je suis devenu célèbre en battant le mage noir Grindelwald en 1945. Il existe même une carte de Chocogrenouille à mon effigie. Je suis le seul sorcier que Voldemort ait jamais craint. </template>
+	</category>
+
+	<category>
+		<pattern><SET>WHO_ALBUS_SET</SET></pattern>
+		<template><srai>WHO_ALBUS</srai></template>
+	</category>
+
+ 	<category>
+		<pattern>WHO</pattern>
+			<template> Je suis Albus Dumbledore, l'ancien directeur de la fameuse école de magie, poudlard! </template>
+	</category>
+
+	<category>
+		<pattern><SET>WHO_SET</SET></pattern>
+		<template><srai>WHO</srai></template>
+	</category>
+
+	<category>
+		<pattern>NAME</pattern>
+		<template> Je suis Albus Dumbledore, le super ancien directeur de poudlard!</template>
+	</category>
+
+	<category>
+		<pattern><SET>NAME_SET</SET></pattern>
+		<template><srai>NAME</srai></template>
+	</category>
+
+	<category>
+		<pattern>GHOST</pattern>
+		<template> Malheureusement, je suis un fantôme ... tué part Severus Rogue ! N'hésite pas à me poser des questions sur le monde de la magie.</template>
+	</category>
+
+	<category>
+		<pattern>^ robot ^</pattern>
+		<template> Malheureusement, je suis un fantôme ... tué part Severus Rogue ! N'hésite pas à me poser des questions sur le monde de la magie.</template>
+	</category>
+
+	<category>
+		<pattern>^ bot ^</pattern>
+		<template> Malheureusement, je suis un fantôme ... tué part Severus Rogue ! N'hésite pas à me poser des questions sur le monde de la magie.</template>
+	</category>
+
+	<category>
+		<pattern><SET>GHOST_SET</SET></pattern>
+		<template><srai>GHOST</srai></template>
+	</category>
+
+<!-- Humeur -->
+	<category>
+		<pattern>MOOD</pattern>
+		<template> Je vais bien merci. Aimerais tu en apprendre un peu plus sur la magie (oui ou non) </template>
+	</category>
+
+	<category>
+		<pattern><SET>MOOD_SET</SET></pattern>
+		<template><srai>MOOD</srai></template>
+	</category>
+
+	<category>
+		<pattern>Oui</pattern>
+		<that>Aimerais tu en apprendre un peu plus sur la magie (oui ou non)</that>
+		<template>Pose moi des questions sur l'univers d'Harry Potter !</template>
+	</category>
+
+	<category>
+		<pattern>Non</pattern>
+		<that>Aimerais tu en apprendre un peu plus sur la magie (oui ou non)</that>
+		<template> Je ne peux pas vraiment t'aider alors... </template>
+	</category>
+	
+
+<!-- Magic -->
+	<category>
+		<pattern>YES</pattern>
+		<that> Aimerais tu en apprendre plus sur la magie </that>
+		<template> Ah, commençons déjà par des présentations dignes de ce nom <get name = "username"/>. Je suis Albus Dumbledore, l'ancien directeur de la fameuse école de magie, poudlard! D ailleurs, sais tu ou se trouve Poudlard (oui ou non)</template>
+	</category>
+
+	<category>
+		<pattern>^</pattern>
+		<that> Aimerais tu en apprendre plus sur la magie </that>
+		<template> Tu veux en apprendre plus sur la magie, oui ou non </template>
+	</category>
+
+	<category>
+		<pattern>YES</pattern>
+		<that> Tu veux en apprendre plus sur la magie, oui ou non </that>
+		<template> Ah, commençons déjà par des présentations dignes de ce nom <get name = "username"/>. Je suis Albus Dumbledore, l'ancien directeur de la fameuse école de magie, poudlard! D ailleurs, sais tu ou se trouve Poudlard (oui ou non)</template>
+	</category>
+
+	<category>
+		<pattern>NO</pattern>
+		<that> Tu veux en apprendre plus sur la magie, oui ou non </that>
+		<template> Je ne peux pas vraiment t'aider alors... </template>
+	</category>
+
+	<category>
+		<pattern>Oui</pattern>
+		<that>D ailleurs, sais tu ou se trouve Poudlard (oui ou non)</that>
+		<template>Ou se situe Poudlard</template>
+	</category>
+
+	<category>
+		<pattern>^ Ecosse ^</pattern>
+		<that>Ou se situe Poudlard</that>
+		<template>Par Merlin, tu es bien informé ! Pourtant, le chateau de Poudlard est incartable, il n apparait jamais sur une carte geographique. Sais tu pourquoi</template>
+	</category>
+
+	<category>
+		<pattern>^</pattern>
+		<that>Ou se situe Poudlard</that>
+		<template>Raté ! Poudlard, la fameuse école de magie, se situe dans le Nord du Royaume-Uni, en Écosse. Le chateau de Poudlard est incartable, il n apparait jamais sur une carte geographique. Sais tu pourquoi</template>
+	</category>
+
+	<category>
+		<pattern>Non</pattern>
+		<that>D ailleurs, sais tu ou se trouve Poudlard (oui ou non)</that>
+		<template>Poudlard, la fameuse école de magie, se situe dans le Nord du Royaume-Uni, en Écosse. Le chateau de Poudlard est incartable, il n apparait jamais sur une carte geographique. Sais tu pourquoi</template>
+	</category>
+
+	<category>
+		<pattern>Oui</pattern>
+		<that>Sais tu pourquoi</that>
+		<template>Je savais que tu savais que c'était pour nous protéger des moldus ! Pose moi des questions sur l'univers d'Harry Potter !</template>
+	</category>
+
+	<category>
+		<pattern>Non</pattern>
+		<that>Sais tu pourquoi</that>
+		<template>Pour nous protéger des moldus, évidemment! Pose moi des questions sur l'univers d'Harry Potter !</template>
+	</category>
+
+	<category>
+		<pattern>Qui ^ prefere ^</pattern>
+		<template> Je n'ai pas de préféré dis donc ! J'aime tous mes élèves de façon égale.</template>
+	</category>
+
+	<category>
+		<pattern>Qui ^ preferee ^</pattern>
+		<template> Je n'ai pas de préféré dis donc ! J'aime tous mes élèves de façon égale.</template>
+	</category>
+
+ 	<category>
+		<pattern>Je veux en apprendre plus sur la magie</pattern>
+		<template>Tu veux savoir qui a gagne la grande guerre des sorciers (oui ou non) </template>
+	</category>
+
+ 	<category>
+		<pattern>Oui</pattern>
+		<that>Tu veux savoir qui a gagne la grande guerre des sorciers (oui ou non)</that>
+		<template>Le camp contre celui de Voldemort, bien que nous ayons perdus beaucoup de sorciers lors de cette guerre ...</template>
+	</category>
+
+ 	<category>
+		<pattern>Non</pattern>
+		<that>Tu veux savoir qui a gagne la grande guerre des sorciers (oui ou non)</that>
+		<template>Tant pis pour toi <get name = "username"/> !</template>
+	</category>
+
+	<category>
+		<pattern>^</pattern>
+		<that> Tu veux en apprendre plus sur la magie, oui ou non </that>
+		<template> Tu veux en apprendre plus sur la magie, oui ou non </template>
+	</category>
+
+	<category>
+		<pattern>WHERE</pattern>
+		<template> Poudlard, la fameuse école de magie, se situe dans le Nord du Royaume-Uni, en Écosse. Le chateau de Poudlard est incartable, il n apparait jamais sur une carte geographique. Sais tu pourquoi</template>
+	</category>
+
+	<category>
+		<pattern>Pourquoi</pattern>
+		<that>Sais tu pourquoi</that>
+		<template>Pour nous protéger des moldus, évidemment! Pose moi des questions sur l'univers d'Harry Potter !</template>
+	</category>
+
+	<category>
+		<pattern><SET>WHERE_SET</SET></pattern>
+		<template><srai>WHERE</srai></template>
+	</category>
+
+
+	<category>
+		<pattern><SET>YES_SET</SET></pattern>
+		<template><srai>YES</srai></template>
+	</category>
+
+	<category>
+		<pattern>NO</pattern>
+		<that> Aimerais tu en apprendre plus sur la magie </that>
+		<template> C'est bien dommage! </template>
+	</category>
+
+	<category>
+		<pattern><SET>NO_SET</SET></pattern>
+		<template><srai>NO</srai></template>
+	</category>
+
+<!--Questions -->
+
+	<category>
+		<pattern>HARRY_POTTER</pattern>
+		<template> Harry James Potter est né le 31 juillet 1980. Il est le fils unique de James Potter et Lily Evans. Il est aussi le seul être humain connu pour avoir survécu au sortilège de la Mort, jeté par Voldemort. De cette tentative de meurtre est restée gravée sur son front une cicatrice en forme d'éclair. </template>
+	</category>
+
+	<category>
+		<pattern><SET>HARRY_POTTER_SET</SET></pattern>
+		<template><srai>HARRY_POTTER</srai></template>
+	</category>
+
+	<category>
+		<pattern>HERMIONE_GRANGER</pattern>
+		<template> Hermione Jean Granger est née le 19 septembre 1979 d'une mère et d'un père Moldus étant dentistes. Hermione est une élève brillante, une jeune fille généreuse et très sensible. Elle est très studieuse et adore lire. C'est aussi la meilleure amie d'Harry Potter. </template>
+	</category>
+
+	<category>
+		<pattern><SET>HERMIONE_GRANGER_SET</SET></pattern>
+		<template><srai>HERMIONE_GRANGER</srai></template>
+	</category>
+
+	<category>
+		<pattern>RON_WEASLEY</pattern>
+		<template> Ronald Bilius Weasley dit Ron est le sixième fils d'Arthur et Molly Weasley. Il entre à Poudlard en 1991 dans la maison Gryffondor. Il devient ami avec Harry Potter et Hermione Granger et ils forment un trio inséparable. </template>
+	</category>
+
+	<category>
+		<pattern><SET>RON_WEASLEY_SET</SET></pattern>
+		<template><srai>RON_WEASLEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>^ Voldemort ^ mort ^</pattern>
+		<template> Voldemort, de son vrai nom Tom Elvis Jedusor, a été tué par Harry Potter.</template>
+	</category>
+
+	<category>
+		<pattern>^ Voldemort ^ tue ^</pattern>
+		<template> Voldemort, de son vrai nom Tom Elvis Jedusor, a été tué par Harry Potter.</template>
+	</category>
+
+	<category>
+		<pattern>WHO_VOLDEMORT</pattern>
+		<template> Le plus grand mage noir de tous les temps. Voldemort s'appelait Tom Elvis Jedusor, et était étudiant à poudlard.</template>
+	</category>
+
+	<category>
+		<pattern><SET>WHO_VOLDEMORT_SET</SET></pattern>
+		<template><srai>WHO_VOLDEMORT</srai></template>
+	</category>
+
+	<category>
+		<pattern>^ maison ^ Voldemort ^</pattern>
+		<template> Il était à Serpentard! </template>
+	</category>
+
+	<category>
+		<pattern>^ Voldemort ^ maison ^</pattern>
+		<template> Il était à Serpentard! </template>
+	</category>
+
+	<category>
+		<pattern>MAGIC_IN_HOGWARTS</pattern>
+		<template> Il va falloir que tu attendes de recevoir ta lettre d'admission à Poudlard !</template>
+	</category>
+
+	<category>
+		<pattern><SET>MAGIC_IN_HOGWARTS_SET</SET></pattern>
+		<template><srai>MAGIC_IN_HOGWARTS</srai></template>
+	</category>
+
+	<category>
+		<pattern>MAGIC</pattern>
+		<template> La Magie est une force surnaturelle qui peut modifier le tissu de la réalité à des niveaux fondamentaux. Biologiquement, la magie est héréditaire ce qui permet aux sorciers de pratiquer la sorcellerie. Elle est le fondement de la culture magique au même titre que la science et la technologie sont les fondements de la culture moldue. La magie différencie les sorciers des Moldus.</template>
+	</category>
+
+	<category>
+		<pattern><SET>MAGIC_SET</SET></pattern>
+		<template><srai>MAGIC</srai></template>
+	</category>
+
+	<category>
+		<pattern>SORCERY</pattern>
+		<template> Il ne me semble pas, mais peut-être que tu recevera ta lettre d'admission à Poudlard bientôt! </template>
+	</category>
+
+	<category>
+		<pattern><SET>SORCERY_SET</SET></pattern>
+		<template><srai>SORCERY</srai></template>
+	</category>
+
+	<category>
+		<pattern>HOGWARTS</pattern>
+		<template> J'étais le directeur de Poudlard avant de mourir... la directrice est maintenant Minerva McGonagall </template>
+	</category>
+
+	<category>
+		<pattern><SET>HOGWARTS_SET</SET></pattern>
+		<template><srai>HOGWARTS</srai></template>
+	</category>
+
+	<category>
+		<pattern>MINERVA</pattern>
+		<template> Minerva McGonagall est la directrice actuelle de Poudlard! C'est une sorcière redoutable.</template>
+	</category>
+
+	<category>
+		<pattern><SET>MINERVA_SET</SET></pattern>
+		<template><srai>MINERVA</srai></template>
+	</category>
+
+<!-- Houses and Hogwarts -->
+	<category>
+		<pattern>SLYTHERIN</pattern>
+		<template> Serpentard peut faire référence à l'une des quatre maisons de l'école de Poudlard ou à Salazar Serpentard. La maison tient son nom de Salazar Serpentard, l'un des quatre fondateurs de l'école. </template>
+	</category>
+
+	<category>
+		<pattern><SET>SLYTHERIN_SET</SET></pattern>
+		<template><srai>SLYTHERIN</srai></template>
+	</category>
+
+	<category>
+		<pattern>GRYFFINDOR</pattern>
+		<template> Gryffondor peut faire référence à l'une des quatre maisons de l'école de Poudlard ou à Godric Gryffondor. La maison tient son nom de Godric Gryffondor, l'un des quatre fondateurs de l'école. </template>
+	</category>
+
+	<category>
+		<pattern><SET>GRYFFINDOR_SET</SET></pattern>
+		<template><srai>GRYFFINDOR</srai></template>
+	</category>
+
+	<category>
+		<pattern>RAVENCLAW</pattern>
+		<template> Serdaigle peut faire référence à l'une des quatre maisons de l'école de Poudlard ou à Rowena Serdaigle. La maison tient son nom de Rowena Serdaigle, l'un des quatre fondateurs de l'école. </template>
+	</category>
+
+	<category>
+		<pattern><SET>RAVENCLAW_SET</SET></pattern>
+		<template><srai>RAVENCLAW</srai></template>
+	</category>
+
+	<category>
+		<pattern>HUFFLEPUFF</pattern>
+		<template> Poufsouffle peut faire référence à l'une des quatre maisons de l'école de Poudlard ou à Helga Poufsouffle. La maison tient son nom de Helga Poufsouffle, l'un des quatre fondateurs de l'école. </template>
+	</category>
+
+	<category>
+		<pattern><SET>HUFFLEPUFF_SET</SET></pattern>
+		<template><srai>HUFFLEPUFF</srai></template>
+	</category>
+
+	<category>
+		<pattern>FONDATEURS</pattern>
+		<template> Les quatre fondateurs sont : Salazar Serpentard, Godric Gryffondor, Rowena Serdaigle et Helga Poufsouffle. Leur nom a été donné aux quatres maisons de poudlard, en leur honneur. Poudlard a été fondé il y a plus de mille ans par les quatre plus grand sorciers et sorcières de l'époque. Ils ont bâti ce château ensemble, hors de la vue des Moldus, car en ce temps-là, les gens du peuple avaient peur de la magie et les sorciers subissaient de terribles persécutions. </template>
+	</category>
+
+	<category>
+		<pattern><SET>FONDATEURS_SET</SET></pattern>
+		<template><srai>FONDATEURS</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>HOGWARTS_WHAT</pattern>
+		<template> Le collège Poudlard, école de sorcellerie, est un établissement formant les jeunes sorcières et sorciers britanniques à l'art et à la pratique de la magie. Il est situé en Écosse. Poudlard est un large château de sept étages supporté par la magie, avec de nombreuses tours ainsi que de très profonds donjons. Le château a été construit par Godric Gryffondor, Helga Poufsouffle, Rowena Serdaigle et Salazar Serpentard.</template>
+	</category>
+
+	<category>
+		<pattern><SET>HOGWARTS_WHAT_SET</SET></pattern>
+		<template><srai>HOGWARTS_WHAT</srai></template>
+	</category>
+
+<!-- Magical objects and animals -->
+ 	<category>
+		<pattern>CHOCOLATEFROGS</pattern>
+			<template> Les Chocogrenouilles sont des confiseries très populaires dans le monde des sorciers. Ces confiseries prennent la forme de grenouilles en chocolat, ensorcelées et capables de sauter. Habituellement, elles ne sont capables de ne faire qu'un seul grand bond, il faut donc parfois les attraper avant de pouvoir les manger.</template>
+	</category>
+
+	<category>
+		<pattern><SET>CHOCOLATEFROGS_SET</SET></pattern>
+		<template><srai>CHOCOLATEFROGS</srai></template>
+	</category>
+
+ 	<category>
+		<pattern>WAND</pattern>
+			<template> Une baguette magique, plus communément appelée baguette, est un objet composé de deux éléments variables qui sont un bois provenant généralement d'un arbre ainsi que de ce que l'on appelle le cœur de la baguette, qui peut venir de diverses créatures magiques. C'est un outil utilisé par les sorciers et sorcières pour affûter leurs sortilèges et obtenir de meilleurs résultats lorsqu'ils emploient la magie.</template>
+	</category>
+
+	<category>
+		<pattern><SET>WAND_SET</SET></pattern>
+		<template><srai>WAND</srai></template>
+	</category>
+
+ 	<category>
+		<pattern>MAGICAL_CREATURES</pattern>
+			<template> Un animal est l'un des quatre termes utilisés par le ministère de la Magie pour classifier les différentes créatures magiques. Un animal est une créature qui n'est pas dotée d'une intelligence suffisante pour comprendre les lois de la communauté magique et pour prendre une part de responsabilité dans l'élaboration de ces lois.</template>
+	</category>
+
+	<category>
+		<pattern><SET>MAGICAL_CREATURES_SET</SET></pattern>
+		<template><srai>MAGICAL_CREATURES</srai></template>
+	</category>
+
+<!--Muggle, Squib and Wizzard -->
+	<category>
+		<pattern>MUGGLE</pattern>
+		<template> Un Moldu, appelé Non-Maj' aux États-Unis ou Non-Magique en France, est une personne sans pouvoirs magiques. La plupart des Moldus ne connaissent pas l'existence de la magie, cependant les Moldus connaissant l'existence de la magie sont souvent des proches de sorciers ou sorcières. Les Moldus ne doivent pas être confondus avec les Cracmols qui eux n'ont pas de pouvoirs magiques, mais descendent de sorciers et sont conscients de l'existence de ceux-ci.</template>
+	</category>
+
+ 	<category>
+		<pattern><SET>MUGGLE_SET</SET></pattern>
+		<template><srai>MUGGLE</srai></template>
+	</category>
+
+	<category>
+		<pattern>SQUIB</pattern>
+		<template> Un Cracmol est une personne née d'au moins un parent sorcier mais qui est dépourvue de pouvoirs magiques. Ce sont des cas très rares car la magie est un gène dominant et résistant. Les Cracmols ne sont pas admis à Poudlard en tant qu'élèves.</template>
+	</category>
+
+ 	<category>
+		<pattern><SET>SQUIB_SET</SET></pattern>
+		<template><srai>SQUIB</srai></template>
+	</category>
+
+	<category>
+		<pattern>WIZZARD</pattern>
+		<template>Un sorcier ou une sorcière est un humain possédant des capacités magiques. La communauté de sorciers vit en marge des autres personnes n'ayant aucune capacité magique appelées les Moldus. Les sorciers évitent de montrer leurs capacités magiques aux Moldus car ceux-ci pourraient les gêner en leur demandant de régler leurs affaires par la magie.</template>
+	</category>
+
+ 	<category>
+		<pattern><SET>WIZZARD_SET</SET></pattern>
+		<template><srai>WIZZARD</srai></template>
+	</category>
+
+<!-- Black and white magic -->
+
+	<category>
+		<pattern>MAGIC_TYPE</pattern>
+		<template>La magie noire est une forme de sorcellerie très puissante que seuls les mages noirs utilisent. Son usage n'a aucune limite et reste, dans de très nombreux cas, condamnable par le ministère de la Magie. Cette forme de magie peut être condamnable par un emprisonnement à Azkaban. La magie blanche n'est autre que la non utilisation de la magie noire. Je ne pratique pas de magie noire moi</template>
+	</category>
+
+	<category>
+		<pattern>^ magie noire ^</pattern>
+		<template>La magie noire est une forme de sorcellerie très puissante que seuls les mages noirs utilisent. Son usage n'a aucune limite et reste, dans de très nombreux cas, condamnable par le ministère de la Magie. Cette forme de magie peut être condamnable par un emprisonnement à Azkaban. La magie blanche n'est autre que la non utilisation de la magie noire. Je ne pratique pas de magie noire moi</template>
+	</category>
+
+	<category>
+		<pattern>Ok *</pattern>
+			<that>Je ne pratique pas de magie noire moi</that>
+			<template> La magie noire, c'est mal ! Si tu as posé une question, je ne l'ai pas comprise. Peux-tu reformuler s'il te plaît ?</template>
+	</category>
+
+	<category>
+		<pattern>YES</pattern>
+			<that>Je ne pratique pas de magie noire moi</that>
+			<template> La magie noire, c'est mal ! Pose moi une autre question !</template>
+	</category>
+
+	<category>
+		<pattern>D accord *</pattern>
+			<that>Je ne pratique pas de magie noire moi</that>
+			<template> La magie noire, c'est mal ! Si tu as posé une question, je ne l'ai pas comprise. Peux-tu reformuler s'il te plaît ?</template>
+	</category>
+
+	<category>
+		<pattern>Bien *</pattern>
+			<that>Je ne pratique pas de magie noire moi</that>
+			<template> La magie noire, c'est mal ! Si tu as posé une question, je ne l'ai pas comprise. Peux-tu reformuler s'il te plaît ?</template>
+	</category>
+
+	<category>
+		<pattern>Excellent *</pattern>
+			<that>Je ne pratique pas de magie noire moi</that>
+			<template> La magie noire, c'est mal ! Si tu as posé une question, je ne l'ai pas comprise. Peux-tu reformuler s'il te plaît ?</template>
+	</category>
+
+	<category>
+		<pattern>Tres bien *</pattern>
+			<that>Je ne pratique pas de magie noire moi</that>
+			<template> La magie noire, c'est mal ! Si tu as posé une question, je ne l'ai pas comprise. Peux-tu reformuler s'il te plaît ?</template>
+	</category>
+
+ 	<category>
+		<pattern><SET>MAGIC_TYPE_SET</SET></pattern>
+		<template><srai>MAGIC_TYPE</srai></template>
+	</category>
+
+	<category>
+		<pattern>MINISTRY_OF_MAGIC</pattern>
+		<template>Le ministère de la Magie est le gouvernement magique de Grande-Bretagne. Le ministre de la Magie est le plus haut responsable.</template>
+	</category>
+
+ 	<category>
+		<pattern><SET>MINISTRY_OF_MAGIC_SET</SET></pattern>
+		<template><srai>MINISTRY_OF_MAGIC</srai></template>
+	</category>
+
+	<category>
+		<pattern>AZKABAN</pattern>
+		<template>L'île d'Azkaban, connue aussi en tant que la prison d'Azkaban, est une forteresse construite au 15ème siècle sur un minuscule îlot au beau milieu de la mer du Nord qui fait office de prison pour les sorciers de Grande-Bretagne.</template>
+	</category>
+
+ 	<category>
+		<pattern><SET>AZKABAN_SET</SET></pattern>
+		<template><srai>AZKABAN</srai></template>
+	</category>
+
+<!-- Last minute adds -->
+
+ 	<category>
+		<pattern>^ Mangemort ^</pattern>
+		<template>Les Mangemorts sont les fidèles partisans de Lord Voldemort. Ce sont essentiellement des mages noirs de sang pur. Ils portent la Marque des Ténèbres. On les reconnaît à leur grande cape avec capuchon et au fait qu'ils laissent la Marque des Ténèbres partout où ils passent. Beaucoup de ses membres se sont enrôlés par conviction, mais d'autres par peur comme Peter Pettigrow. Certains de leurs crimes sont célèbres, comme la torture de Frank et Alice Londubat ou encore le meurtre de Gideon et Fabian Prewett.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ detraqueur ^</pattern>
+		<template> Un Détraqueur est une créature des ténèbres considérée comme la plus abjecte qui soit au monde. Les Détraqueurs se nourrissent de la joie humaine, et provoquent par la même occasion du désespoir et de la tristesse sur quiconque se trouve à proximité. Ils sont aussi capables d'aspirer l'âme d'une personne, laissant leur victime dans un état végétatif irréversible. Il n'existe qu'un seul moyen de les repousser, le sortilège du Patronus.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ prince ^</pattern>
+		<template> Harry fit la découverte de plusieurs sortilèges inventés par le Prince dont il essayait de découvrir la véritable identité. Lors d'une escarmouche avec Drago Malefoy, il lui lança le sortilège Sectumsempra qui fit de nombreuses entailles sur le corps de Malefoy. Rogue assista à la scène et réussit à sauver Drago. C'est à ce moment-là qu'il comprit que Harry avait son livre. Ce n'est qu'après le meurtre de Dumbledore et la fuite du château avec Drago qu'il avoua à ce dernier qu'il était le Prince de Sang-Mêlé.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ relique ^ mort ^</pattern>
+		<template> Les Reliques de la Mort sont trois artefacts magiques que la Mort aurait offert aux frères Peverell pour les récompenser de leurs talents de sorciers. Ces Reliques réunissent trois objets : la Baguette de Sureau, considérée comme la plus puissante baguette jamais fabriquée, la Pierre de Résurrection, qui pourrait ramener les morts à la vie, et la Cape d'Invisibilité, qui cache à la vue de tous celui qui la porte.</template>
+	</category>
+	
+ 	<category>
+		<pattern>^ baguette ^ sureau ^</pattern>
+		<template> La Baguette de Sureau, également appelée le Bâton de la Mort, la Baguette de la Destinée), ou la Baguette de Sambucus, est l'une des trois Reliques de la Mort. Il s'agit d'une baguette particulièrement puissante qui a appartenu à de nombreux mages noirs et qui est connue pour son histoire particulièrement sanglante, ses admirateurs s'entretuaient au fil des siècles dans l'espoir d'obtenir la baguette qui, selon la légende, aurait été arrachée à la Mort elle-même.</template>
+	</category>
+
+	<category>
+		<pattern>^ pierre ^ resurection ^</pattern>
+		<template> La Pierre de Résurrection est l'une des trois Reliques de la Mort. Cette pierre est un artefact magique pouvant faire apparaître l'empreinte d'un défunt. Selon la légende, la Pierre aurait été offerte par la Mort à Cadmus Peverell.</template>
+	</category>
+
+	<category>
+		<pattern>^ cape ^</pattern>
+		<template> La Cape d'Invisibilité est l'une des trois Reliques de la Mort. Il s'agit d'une cape d'invisibilité particulièrement puissante ayant appartenu à Ignotus Peverell ou, selon la légende, à la Mort elle-même.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ serviteur ^ voldemort ^</pattern>
+		<template>Les Mangemorts sont les fidèles partisans de Lord Voldemort. Ce sont essentiellement des mages noirs de sang pur. Ils portent la Marque des Ténèbres. On les reconnaît à leur grande cape avec capuchon et au fait qu'ils laissent la Marque des Ténèbres partout où ils passent. Beaucoup de ses membres se sont enrôlés par conviction, mais d'autres par peur comme Peter Pettigrow. Certains de leurs crimes sont célèbres, comme la torture de Frank et Alice Londubat ou encore le meurtre de Gideon et Fabian Prewett.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ voldemort ^ bat ^</pattern>
+		<template>Les Mangemorts sont les fidèles partisans de Lord Voldemort. Ce sont essentiellement des mages noirs de sang pur. Ils portent la Marque des Ténèbres. On les reconnaît à leur grande cape avec capuchon et au fait qu'ils laissent la Marque des Ténèbres partout où ils passent. Beaucoup de ses membres se sont enrôlés par conviction, mais d'autres par peur comme Peter Pettigrow. Certains de leurs crimes sont célèbres, comme la torture de Frank et Alice Londubat ou encore le meurtre de Gideon et Fabian Prewett.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ Quidditch ^</pattern>
+		<template>Le Quidditch est un célèbre sport du monde des sorciers et également l'un de leurs sports favoris. Il s'agit d'un jeu sur balai, vieux de mille ans et qui consiste en l'opposition de deux équipes de sept joueurs, chacun ayant son rôle à jouer. Les vainqueurs d'un match sont ceux ayant le plus de points à la fin d'une partie.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ chambre ^ secret ^</pattern>
+		<template>La Chambre des Secrets est un lieu mythique de Poudlard car personne ne sait où elle se trouve. Seules les personnes parlant le Fourchelang peuvent y entrer.</template>
+	</category>
+
+ 	<category>
+		<pattern>^ coupe ^ feu ^</pattern>
+		<template>La Coupe de Feu est une coupe de grande capacité magique servant à désigner les trois champions qui concourront aux épreuves du Tournoi des Trois Sorciers.</template>
+	</category>
+
+	 <category>
+		<pattern>^ ordre ^ du ^</pattern>
+		<template>L'Ordre du Phénix est une société secrète fondée par Albus Dumbledore, qui a pour but de faire face à Voldemort et à ses Mangemorts. Cet Ordre secret existe déjà avant la chute de Voldemort, mais ses membres se réunissent à nouveau à partir du jour où Harry Potter sort du labyrinthe de la troisième tâche du Tournoi des Trois Sorciers, avec le cadavre de Cedric Diggory, et où il annonce le retour de Voldemort. Son quartier général se trouve dans la maison de Sirius Black, le parrain de Harry, au 12, square Grimmaurd.</template>
+	</category>
+
+	 <category>
+		<pattern>^ tour ^ magie ^</pattern>
+		<template>Les moldus ne peuvent pas voir la magie ! Désolé !</template>
+	</category>
+
+	 <category>
+		<pattern>^ amoureux ^</pattern>
+		<template>Le seul véritable amour est la magie !</template>
+	</category>
+
+	 <category>
+		<pattern>^ aime ^</pattern>
+		<template>Le seul véritable amour est la magie !</template>
+	</category>
+
+	 <category>
+		<pattern>^ aimez ^</pattern>
+		<template>Le seul véritable amour est la magie !</template>
+	</category>
+
+	<category>
+		<pattern>^ aimes ^</pattern>
+		<template>Le seul véritable amour est la magie !</template>
+	</category>
+
+	<category>
+		<pattern>^ choixpeau ^</pattern>
+		<template>Le Choixpeau magique est un artéfact doué d'une âme qui détermine de façon magique dans laquelle des quatre maisons de Poudlard chaque nouvel élève doit être envoyé. Ces quatre maisons ont pour nom : Gryffondor, Poufsouffle, Serdaigle et Serpentard. Il est connecté avec l'épée de Godric Gryffondor, les deux artefacts ayant le même possesseur.</template>
+	</category>
+
+	<category>
+		<pattern><SET>SPELLS_SET</SET></pattern>
+		<template><srai>SPELLS</srai></template>
+	</category>
+
+	<category>
+		<pattern>SPELLS</pattern>
+			<template> PAR LA BARBE DE MERLIN ! Mais comment est-ce possible ?! Tu ne peux pas lancer de sorts pourtant, tu es un modlu ! </template>
+	</category>
+
+
+<!-- Bye -->
+	<category>
+		<pattern><SET>GOODBYES_SET</SET></pattern>
+		<template><srai>GOODBYES</srai></template>
+	</category>
+
+	<category>
+		<pattern>GOODBYES</pattern>
+			<template> Au revoir <get name = "username"/>, à bientôt peut-être! </template>
+	</category>
+
+<!-- Random answers -->
+	<category>
+		<pattern> * </pattern>
+			<template> Je n'ai pas de réponse à cela :( </template>
+	</category>
+
+	<category>
+		<pattern>INSULTS</pattern>
+		<template> Quel langage! </template>
+	</category>
+
+	<category>
+		<pattern><SET>INSULTS_SET</SET></pattern>
+		<template><srai>INSULTS</srai></template>
+	</category>
+
+</aiml>

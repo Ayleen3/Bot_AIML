@@ -1,0 +1,1 @@
+c:/"Program Files (x86)"/Java/jre1.8.0_171/bin/java -cp out/production/Ab Main bot=hp_bot action=chat trace=false
